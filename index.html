@@ -22,11 +22,25 @@
                 <li><a href="#publico">Público</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#aplicacao">Aplicação</a></li>
+                <li><a href="#slideshow">Slideshow</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="tema-buttons">
+            <button onclick="mudarTema('azul')">
+                Azul
+            </button>
+
+            <button onclick="mudarTema('escuro')">
+                Escuro
+            </button>
+
+            <button onclick="mudarTema('claro')">
+                Claro
+            </button>
+        </div>
         <section class="hero" id="problema">
             <div class="hero-content">
                 <div class="hero-text">
@@ -344,6 +358,22 @@
                 </div>
             </div>
         </section>
+        <section id="slideshow">
+
+            <div class="section-titleslide">
+                <h1>Galeria OrbitFlood</h1>
+                <p>
+                    Slideshow interativo com imagens do projeto,
+                    apresentando cenários de monitoramento,
+                    prevenção de enchentes e aplicação da solução.
+                </p>
+            </div>
+            <section class="slideshow">
+                <img class="slide active" src="./assets/img/imagem1.jpg">
+                <img class="slide" src="./assets/img/imagem2.jpg">
+                <img class="slide" src="./assets/img/imagem3.jpg">
+            </section>
+        </section>
     </main>
 
     <footer>
@@ -367,6 +397,7 @@
                     <li><a href="#publico">Público-Alvo</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#aplicacao">Aplicação</a></li>
+                    <li><a href="#slideshow">Slideshow</a></li>
                 </ul>
             </div>
 
