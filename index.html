@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Limelight&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,27 +22,52 @@
                 <li><a href="#publico">Público</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#aplicacao">Aplicação</a></li>
+                <li><a href="#slideshow">Slideshow</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="problema" class="hero">
+        <div class="tema-buttons">
+            <button onclick="mudarTema('azul')">
+                Azul
+            </button>
+
+            <button onclick="mudarTema('escuro')">
+                Escuro
+            </button>
+
+            <button onclick="mudarTema('claro')">
+                Claro
+            </button>
+        </div>
+        <section class="hero" id="problema">
             <div class="hero-content">
-                <h2>
-                    Monitoramento Inteligente Contra Enchentes
-                </h2>
+                <div class="hero-text">
+                    <h1>OrbitFlood</h1>
 
-                <p>
-                    O OrbitFlood utiliza monitoramento climático,
-                    sensores inteligentes e tecnologias inspiradas
-                    na indústria espacial para ajudar na prevenção
-                    de enchentes urbanas.
-                </p>
+                    <h2>
+                        Monitoramento Inteligente
+                        Contra Enchentes
+                    </h2>
 
-                <a href="#tecnologia" class="hero-button">
-                    Conheça a Solução
-                </a>
+                    <p>
+                        Tecnologia inspirada na indústria espacial
+                        para monitorar riscos de enchentes urbanas
+                        e proteger comunidades vulneráveis.
+                    </p>
+
+                    <a href="#tecnologia" class="hero-button">
+                        Conheça a Solução
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="./assets/img/hero-image.jpg"
+                        alt="Tecnologia de monitoramento inteligente de enchentes"
+                    >
+                </div>
             </div>
         </section>
 
@@ -317,7 +342,6 @@
                     </button>
 
                     <div class="simulation-result">
-
                         <h4>Status Atual</h4>
 
                         <p class="status-alert">
@@ -325,7 +349,30 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="application-image">
+                    <img
+                        src="./assets/img/application-image.png"
+                        alt="Sistema de alerta inteligente contra enchentes"
+                    >
+                </div>
             </div>
+        </section>
+        <section id="slideshow">
+
+            <div class="section-titleslide">
+                <h1>Galeria OrbitFlood</h1>
+                <p>
+                    Slideshow interativo com imagens do projeto,
+                    apresentando cenários de monitoramento,
+                    prevenção de enchentes e aplicação da solução.
+                </p>
+            </div>
+            <section class="slideshow">
+                <img class="slide active" src="./assets/img/imagem1.jpg">
+                <img class="slide" src="./assets/img/imagem2.jpg">
+                <img class="slide" src="./assets/img/imagem3.jpg">
+            </section>
         </section>
     </main>
 
@@ -350,6 +397,7 @@
                     <li><a href="#publico">Público-Alvo</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#aplicacao">Aplicação</a></li>
+                    <li><a href="#slideshow">Slideshow</a></li>
                 </ul>
             </div>
 
@@ -361,6 +409,36 @@
                     Global do Clima
                 </p>
             </div>
+
+            <div class="footer-team">
+                <h3>Integrantes</h3>
+
+                <ul>
+                    <li>
+                        Leonardo Teodoro Leitão
+                        <br>
+                        RM 569724
+                    </li>
+
+                    <li>
+                        João Gabriel Mosqueti Agra Cunha
+                        <br>
+                        RM 572017
+                    </li>
+
+                    <li>
+                        Gustavo Almeida Lopes do Nascimento
+                        <br>
+                        RM 571070
+                    </li>
+
+                    <li>
+                        Rafael Yuta Nischida
+                        <br>
+                        RM 570552
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="footer-bottom">
@@ -370,6 +448,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
