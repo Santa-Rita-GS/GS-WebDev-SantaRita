@@ -189,3 +189,11 @@ function showResult(){
 }
 
 showQuestion();
+
+function validar(bairro, nivel){
+
+    if(bairro.value == "" || nivel.value == ""){
+        alert("Preencha todos os campos!");
+    }
+
+}
