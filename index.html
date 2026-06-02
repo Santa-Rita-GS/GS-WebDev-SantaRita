@@ -314,33 +314,36 @@
                 <div class="simulation-card">
                     <h3>Simulação de Monitoramento</h3>
 
-                    <div class="input-group">
-                        <label for="bairro">
-                            Bairro
-                        </label>
+                        <div class="input-group">
+                            <label for="bairro">
+                                Bairro
+                            </label>
 
-                        <input
-                            type="text"
-                            id="bairro"
-                            placeholder="Ex: Bela Vista"
+                            <input
+                                type="text"
+                                id="bairro"
+                                placeholder="Ex: Bela Vista"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="nivel">
+                                Nível da Água (cm)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="nivel"
+                                placeholder="Ex: 72"
+                            >
+                        </div>
+
+                        <button
+                            class="simulation-button"
+                            onclick="validar(bairro, nivel)"
                         >
-                    </div>
-
-                    <div class="input-group">
-                        <label for="nivel">
-                            Nível da Água (cm)
-                        </label>
-
-                        <input
-                            type="number"
-                            id="nivel"
-                            placeholder="Ex: 72"
-                        >
-                    </div>
-
-                    <button class="simulation-button">
-                        Verificar Situação
-                    </button>
+                            Verificar Situação
+                        </button>
 
                     <div class="simulation-result">
                         <h4>Status Atual</h4>
